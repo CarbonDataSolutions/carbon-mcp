@@ -1,21 +1,22 @@
 # Carbon MCP connector
 
+carbon.talent is a global data and AI talent platform. Verified data talent, ready to interview.
+
 **Listing name:** Carbon  
 **Product:** carbon.talent  
 **Connector URL:** https://mcp.carbondatasolutions.com/mcp  
 **Homepage:** https://www.carbondatasolutions.com/hire  
+**App:** https://carbontalent.carbondatasolutions.com  
 **Support:** talent@carbondatasolutions.com  
 **Privacy:** https://www.carbondatasolutions.com/privacy
 
 ## One-line
 
-Hire data professionals from ChatGPT, Claude, or any MCP host. Post a role free.
+Hire verified data and AI talent from ChatGPT, Claude, Cline, or any MCP host. Post your role free.
 
 ## What it does
 
-Hiring a data person shouldn't feel like a gamble. You need someone who can do the work, and you need a clear path from role draft to offer without leaving the assistant you already use.
-
-Carbon connects carbon.talent to your AI assistant. Search the talent catalog, draft and post a role, review applicants, and move people through Applied, Screened, Interview, and Offer. Writes ask for your confirmation first. Post a role free. The once-off fee is waived on your first hire. Already have a candidate? Skills tests start from about $110 (about €95).
+Carbon connects carbon.talent to your AI assistant. Search the talent catalog, draft and post a role, review applicants, and move people through Applied, Screened, Interview, and Offer. Writes ask for your confirmation first. Post your role free.
 
 ## Features
 
@@ -50,7 +51,37 @@ Use Streamable HTTP at:
 
 `https://mcp.carbondatasolutions.com/mcp`
 
-Sign in with OAuth to a carbon.talent company account.
+Sign in with OAuth to a carbon.talent company account. See [llms-install.md](./llms-install.md) for host-specific steps.
+
+### Cline
+
+**Remote Servers UI**
+
+1. In the Cline panel, open **MCP Servers** → **Remote Servers**.
+2. Server Name: `carbon`
+3. Server URL: `https://mcp.carbondatasolutions.com/mcp`
+4. Transport Type: **Streamable HTTP**
+5. Add Server, then sign in when the OAuth window opens.
+
+**Or edit `cline_mcp_settings.json`**
+
+- CLI: `~/.cline/data/settings/cline_mcp_settings.json`
+- IDE: MCP Servers → Configure → Configure MCP Servers
+
+```json
+{
+  "mcpServers": {
+    "carbon": {
+      "type": "streamableHttp",
+      "url": "https://mcp.carbondatasolutions.com/mcp",
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+```
+
+Keys match [Cline's MCP docs](https://docs.cline.bot/mcp/mcp-overview): `type` must be `"streamableHttp"` (omitting it falls back to legacy SSE). No secrets in this file — OAuth handles sign-in.
 
 ### Cursor / Open Plugins `.mcp.json`
 
@@ -67,10 +98,12 @@ Sign in with OAuth to a carbon.talent company account.
 
 ## Offers
 
-- Post a role free
-- The once-off fee is waived on your first hire
-- Skills tests from about $110 (about €95)
+- Post your role free
 
 ## Honest claim rules
 
 Do not say Carbon is live inside ChatGPT, Claude, Copilot, Gemini, or Cursor directories until that directory lists it. Safe today: the MCP endpoint is live and hosts can connect by URL where custom connectors are allowed.
+
+## License
+
+MIT — see [LICENSE](./LICENSE). This repo is connector metadata and install docs for the hosted server; the product itself stays on carbon.talent.
