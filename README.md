@@ -2,21 +2,21 @@
 
 carbon.talent is a global data and AI talent platform. Verified data talent, ready to interview.
 
-**Listing name:** Carbon  
+**Listing name:** carbon.talent  
 **Product:** carbon.talent  
 **Connector URL:** https://mcp.carbondatasolutions.com/mcp  
-**Homepage:** https://www.carbondatasolutions.com/hire  
+**Homepage:** https://www.carbondatasolutions.com/mcp  
 **App:** https://carbontalent.carbondatasolutions.com  
 **Support:** talent@carbondatasolutions.com  
 **Privacy:** https://www.carbondatasolutions.com/privacy
 
 ## One-line
 
-Hire verified data and AI talent from ChatGPT, Claude, Cline, or any MCP host. Post your role free.
+carbon.talent: global data and AI talent platform. Hire data and ML talent from any AI assistant.
 
 ## What it does
 
-Carbon connects carbon.talent to your AI assistant. Search the talent catalog, draft and post a role, review applicants, and move people through Applied, Screened, Interview, and Offer. Writes ask for your confirmation first. Post your role free.
+Carbon connects carbon.talent to your AI assistant. Search the talent catalog, draft and post a role, review applicants, and move people through Applied, Screened, Interview, and Offer. Writes ask for your confirmation first. Marking someone Hired stays in the portal.
 
 ## Features
 

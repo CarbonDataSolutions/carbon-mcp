@@ -1,10 +1,10 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CarbonDataSolutions/carbon",
-  "title": "Carbon",
-  "description": "Hire data professionals from any MCP host. Post a role free.",
-  "version": "1.0.3",
-  "websiteUrl": "https://www.carbondatasolutions.com/hire",
+  "title": "carbon.talent",
+  "description": "carbon.talent: global data and AI talent platform. Hire data and ML talent from any AI assistant.",
+  "version": "1.0.4",
+  "websiteUrl": "https://www.carbondatasolutions.com/mcp",
   "repository": {
     "url": "https://github.com/CarbonDataSolutions/carbon-mcp",
     "source": "github"
@@ -46,7 +46,7 @@
     },
     {
       "name": "move_applicant_stage",
-      "description": "Move an applicant to Applied, Screened, Interview, or Offer (never Hired via the connector; confirm on write)."
+      "description": "Moves an applicant to Applied, Screened, Interview, or Offer. Mark someone Hired in the carbon.talent portal. Confirm on write."
     },
     {
       "name": "search_talent",

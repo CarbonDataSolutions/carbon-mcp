@@ -1,0 +1,8 @@
+{
+  "name": "carbon-talent",
+  "version": "1.0.4",
+  "description": "carbon.talent: global data and AI talent platform. Hire data and ML talent from any AI assistant.",
+  "mcpServers": {
+    "carbon-talent": { "httpUrl": "https://mcp.carbondatasolutions.com/mcp" }
+  }
+}
