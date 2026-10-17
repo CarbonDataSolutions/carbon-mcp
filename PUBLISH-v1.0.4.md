@@ -2,6 +2,8 @@
 
 Prereq: this PR is merged to `main`, and you are an owner of the GitHub org **CarbonDataSolutions**.
 
+Install and publish docs: https://modelcontextprotocol.io/registry/quickstart
+
 ```bash
 # 1) Clone / update
 git clone https://github.com/CarbonDataSolutions/carbon-mcp.git
@@ -9,8 +11,13 @@ cd carbon-mcp
 git checkout main && git pull
 
 # 2) Install the official publisher (once)
-# https://modelcontextprotocol.io/registry/quickstart
-brew install mcp-publisher   # or: curl -fsSL … | sh   — use the install path from the quickstart
+# macOS / Linux — pre-built binary (from the quickstart):
+curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher && sudo mv mcp-publisher /usr/local/bin/
+
+# Or with Homebrew:
+# brew install mcp-publisher
+
+mcp-publisher --help
 
 # 3) Device login as the org owner (required for io.github.CarbonDataSolutions/*)
 mcp-publisher login github

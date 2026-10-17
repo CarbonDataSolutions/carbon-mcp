@@ -29,11 +29,11 @@
     },
     {
       "name": "create_role_draft",
-      "description": "Create a private role draft for your company (confirm on write)."
+      "description": "Create a private role draft for your company. Asks you to confirm first in most hosts."
     },
     {
       "name": "post_role",
-      "description": "Submit a draft role for publishing (confirm on write)."
+      "description": "Submit a draft role for publishing. Asks you to confirm first in most hosts."
     },
     {
       "name": "list_applicants",
@@ -45,7 +45,7 @@
     },
     {
       "name": "move_applicant_stage",
-      "description": "Moves an applicant to Applied, Screened, Interview, or Offer. Mark someone Hired in the carbon.talent portal. Confirm on write."
+      "description": "Moves an applicant on one of your roles to Applied, Screened, Interview, or Offer. The applicant gets the same update the portal sends. Mark someone Hired in the carbon.talent portal. Asks you to confirm first in most hosts."
     },
     {
       "name": "search_talent",

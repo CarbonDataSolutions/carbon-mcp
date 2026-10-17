@@ -56,13 +56,12 @@ Then authorize if prompted (`Authorize OAuth` in `cline mcp`).
 
 ## Cursor / Open Plugins
 
-`.mcp.json` (note Cursor uses `streamable-http`, not Cline's `streamableHttp`):
+`.mcp.json` (Cursor remote entries use `url` only; Cline uses `streamableHttp`):
 
 ```json
 {
   "mcpServers": {
     "carbon": {
-      "type": "streamable-http",
       "url": "https://mcp.carbondatasolutions.com/mcp"
     }
   }
