@@ -1,0 +1,12 @@
+{
+  "name": "@carbondatasolutions/carbon-mcp",
+  "version": "1.0.4",
+  "private": true,
+  "description": "carbon.talent: global data and AI talent platform. Hire data and ML talent from any AI assistant.",
+  "license": "MIT",
+  "homepage": "https://www.carbondatasolutions.com/mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarbonDataSolutions/carbon-mcp.git"
+  }
+}

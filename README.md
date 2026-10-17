@@ -2,21 +2,21 @@
 
 carbon.talent is a global data and AI talent platform. Verified data talent, ready to interview.
 
-**Listing name:** Carbon  
+**Listing name:** carbon.talent  
 **Product:** carbon.talent  
 **Connector URL:** https://mcp.carbondatasolutions.com/mcp  
-**Homepage:** https://www.carbondatasolutions.com/hire  
+**Homepage:** https://www.carbondatasolutions.com/mcp  
 **App:** https://carbontalent.carbondatasolutions.com  
 **Support:** talent@carbondatasolutions.com  
 **Privacy:** https://www.carbondatasolutions.com/privacy
 
 ## One-line
 
-Hire verified data and AI talent from ChatGPT, Claude, Cline, or any MCP host. Post your role free.
+carbon.talent: global data and AI talent platform. Hire data and ML talent from any AI assistant.
 
 ## What it does
 
-Carbon connects carbon.talent to your AI assistant. Search the talent catalog, draft and post a role, review applicants, and move people through Applied, Screened, Interview, and Offer. Writes ask for your confirmation first. Post your role free.
+Carbon connects carbon.talent to your AI assistant. Search the talent catalog, draft and post a role, review applicants, and move people through Applied, Screened, Interview, and Offer. Writes ask for your confirmation first. Marking someone Hired stays in the portal.
 
 ## Features
 
@@ -37,11 +37,11 @@ Static declarations for directory indexing also live in `server.json` and `serve
 | `whoami` | read | Show the connected carbon.talent hiring account (name, email, company, verification) |
 | `list_roles` | read | List your company's roles with status, location, and applicant counts |
 | `get_role` | read | Get one of your roles in full, including applicants by stage |
-| `create_role_draft` | write, confirm | Create a private role draft for your company |
-| `post_role` | write, confirm | Submit a draft role for publishing |
+| `create_role_draft` | write, confirm | Create a private role draft for your company. Asks you to confirm first in most hosts. |
+| `post_role` | write, confirm | Submit a draft role for publishing. Asks you to confirm first in most hosts. |
 | `list_applicants` | read | List applicants for one of your roles with stage and applied time |
 | `get_applicant_summary` | read | Summarise one applicant without contact details, CV, rates, or scores |
-| `move_applicant_stage` | write, confirm | Move an applicant to Applied, Screened, Interview, or Offer (never Hired via the connector) |
+| `move_applicant_stage` | write, confirm | Moves an applicant to Applied, Screened, Interview, or Offer. The applicant gets the same update the portal sends. Mark someone Hired in the carbon.talent portal. |
 | `search_talent` | read | Search the talent catalog by skills, experience, location, or keywords (first name plus last initial) |
 | `get_talent_profile` | read | Get one talent catalog profile by the id returned from search |
 
@@ -89,7 +89,6 @@ Keys match [Cline's MCP docs](https://docs.cline.bot/mcp/mcp-overview): `type` m
 {
   "mcpServers": {
     "carbon": {
-      "type": "streamable-http",
       "url": "https://mcp.carbondatasolutions.com/mcp"
     }
   }

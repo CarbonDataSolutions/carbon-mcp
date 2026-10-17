@@ -1,0 +1,24 @@
+{
+  "name": "carbon-talent",
+  "displayName": "carbon.talent",
+  "description": "carbon.talent: global data and AI talent platform. Hire data and ML talent from any AI assistant.",
+  "version": "1.0.4",
+  "author": {
+    "name": "Carbon Data Solutions",
+    "url": "https://www.carbondatasolutions.com"
+  },
+  "homepage": "https://www.carbondatasolutions.com/mcp",
+  "license": "MIT",
+  "keywords": [
+    "hiring",
+    "recruiting",
+    "data engineer",
+    "data analyst",
+    "data scientist",
+    "ml engineer",
+    "ai talent",
+    "jobs",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}

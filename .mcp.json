@@ -1,7 +1,6 @@
 {
   "mcpServers": {
     "carbon": {
-      "type": "streamable-http",
       "url": "https://mcp.carbondatasolutions.com/mcp"
     }
   }
