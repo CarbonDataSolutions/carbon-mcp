@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CarbonDataSolutions/carbon",
-  "title": "carbon.talent",
-  "description": "carbon.talent: global data and AI talent platform. Hire data and ML talent from any AI assistant.",
-  "version": "1.0.4",
+  "title": "Carbon",
+  "description": "Hire skills-assessed data professionals from any MCP host. Post your role free.",
+  "version": "1.0.5",
   "websiteUrl": "https://www.carbondatasolutions.com/mcp",
   "repository": {
     "url": "https://github.com/CarbonDataSolutions/carbon-mcp",
