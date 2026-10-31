@@ -7,6 +7,7 @@ carbon.talent is a global data and AI talent platform. Verified data talent, rea
 **Connector URL:** https://mcp.carbondatasolutions.com/mcp  
 **Homepage:** https://www.carbondatasolutions.com/mcp  
 **App:** https://carbontalent.carbondatasolutions.com  
+**iOS App Store:** https://apps.apple.com/app/carbon-talent/id6816974890  
 **Support:** talent@carbondatasolutions.com  
 **Privacy:** https://www.carbondatasolutions.com/privacy
 
